@@ -1,0 +1,68 @@
+﻿@font-face {
+	font-family: BP;
+	src: url(BluePrinted.ttf);
+} 
+
+body{
+	margin:0px;
+	padding:0px;
+	background:#464646 url(body.jpg)repeat;
+}
+
+#header{
+	position:relative;
+	margin:0 auto;
+	margin-top:40px;
+	width:500px;
+	height:60px;
+	text-align:center;
+	font-family: BP;
+	font-size:40px;
+	line-height:45px;
+	color:#ffbbbe;
+	text-shadow:3px 3px 10px Red,-3px -3px 10px Yellow;
+}
+
+#slider{
+	position:relative;
+	margin:0 auto;
+	margin-top:10px;
+	width:1000px;
+	height:600px;
+	overflow:hidden;
+	border:1px #000 solid;
+	box-shadow: 0px 0px 8px -1px #000;
+}
+
+#slide{
+	position:absolute;
+	top:600px;
+}
+
+#forward{
+	position:absolute;
+	z-index:100;
+	top:280px;
+	left:940px;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	background:url(forward.png) no-repeat;
+	transition:all 0.2s ease-in-out;
+	opacity:0;
+	transform:Scale(1.5);
+}
+
+#back{
+	position:absolute;
+	z-index:100;
+	top:280px;
+	left:20px;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	background:url(back.png) no-repeat;
+	transition:all 0.2s ease-in-out;
+	opacity:0;
+	transform:Scale(1.5);
+}
